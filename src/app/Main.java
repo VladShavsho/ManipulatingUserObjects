@@ -10,10 +10,13 @@ public class Main {
         Optional<User> userId = userRepository.findUserById(3);
         Optional<User> userEmail = userRepository.findUserByEmail("john@gmail.com");
         Optional<List<User>> userList = userRepository.findAllUser();
+        int usersOfNumbers = userRepository.numberOfUsers();
 
         System.out.println(userId);
         System.out.println(userEmail);
         System.out.println("___________________________________");
         System.out.println(userList);
+        System.out.println("___________________________________");
+        System.out.println("Кількість користувачів: " + usersOfNumbers);
     }
 }

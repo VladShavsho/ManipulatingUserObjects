@@ -36,4 +36,8 @@ public class UserRepository {
             return Optional.of(list);
         }
    }
+
+   public int numberOfUsers(){
+        return getDataUser().size();
+    }
 }
